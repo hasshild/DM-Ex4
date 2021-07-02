@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 class Ex4{
 	public static void main(String[] args){
+
 		//名前を聞くパート
 		Scanner scan = new Scanner(System.in);
 		System.out.println("What is your name?");
@@ -20,5 +21,9 @@ class Ex4{
 		System.out.println("Die 1: " +x1);
 		System.out.println("Die 2: " +x2);
 		System.out.println("Total value: " +total);
+		
+		//勝ち負けを判定するパート
+		if(total > 7) System.out.println("You won!");
+		else System.out.println("You lost!");
 	}
 }
